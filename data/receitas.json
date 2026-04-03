@@ -58,5 +58,25 @@
     ],
     "favorito": true,
     "dataCriacao": "2026-04-03T21:50:32.607Z"
+  },
+  {
+    "id": "91bfbd4c-3d27-4f2d-84ee-ffe0c95f3ca7",
+    "titulo": "Overnight",
+    "ingredientes": "120 ml (½ chávena) de flocos de aveia\n120 ml (½ chávena) de bebida vegetal\n10 ml (2 colheres de chá) de sementes de chia\n5 ml (1 colher de chá) de mel ou xarope de ácer\nFruta fresca a gosto",
+    "preparacao": "1. Junte todos os ingredientes (exceto a fruta) num recipiente hermético e mexa bem.\n2. Leve ao frigorífico durante, pelo menos, 4 horas ou, idealmente, de um dia para o outro.\n3. Quando for servir, adicione a fruta fresca cortada a gosto.",
+    "categoria": "Lanches",
+    "imagem": null,
+    "porcoes": 1,
+    "tempoPreparacao": "5 min",
+    "tempoConfecao": null,
+    "tags": [
+      "pequeno almoço",
+      "aveia",
+      "saudável",
+      "rápido",
+      "vegetariano"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-03T22:33:58.145Z"
   }
 ]
