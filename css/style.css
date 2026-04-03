@@ -170,3 +170,145 @@ body {
     font-size: 22px;
     margin-bottom: 2px;
 }
+/* ============================================
+   PÁGINA DE ADICIONAR RECEITA
+   ============================================ */
+
+.header .btn-voltar {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 4px;
+    opacity: 0.85;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: white;
+    outline: none;
+    font-family: inherit;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #c8793a;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    font-size: 13px;
+    cursor: pointer;
+    color: #888;
+}
+
+.tab.active {
+    background-color: #c8793a;
+    color: white;
+    border-color: #c8793a;
+}
+
+/* Área de upload de imagem */
+.upload-area {
+    border: 2px dashed #ddd;
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    cursor: pointer;
+    color: #888;
+}
+
+.upload-area:active {
+    background-color: #faf8f5;
+}
+
+/* Nota informativa */
+.nota {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* Botão processar */
+.btn-processar {
+    width: 100%;
+    padding: 14px;
+    background-color: #5b8a5b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+.btn-processar:disabled {
+    opacity: 0.6;
+}
+
+/* Botão guardar */
+.btn-guardar {
+    width: 100%;
+    padding: 16px;
+    background-color: #c8793a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-guardar:disabled {
+    opacity: 0.6;
+}
+
+/* Opções extra */
+.opcoes-extra {
+    margin-bottom: 16px;
+}
+
+.opcoes-extra summary {
+    font-size: 14px;
+    font-weight: 600;
+    color: #c8793a;
+    cursor: pointer;
+    padding: 8px 0;
+}
