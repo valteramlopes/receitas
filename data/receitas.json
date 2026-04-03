@@ -38,5 +38,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-03T21:36:34.984Z"
+  },
+  {
+    "id": "b9e6c74a-fe2f-47ff-9041-82ccbb81b7f2",
+    "titulo": "Caril de grão com espinafres",
+    "ingredientes": "- 2 colheres de sopa de óleo vegetal\n- 1 cebola, picada\n- 2 dentes de alho, picados\n- 20 g de gengibre (aprox. 1 pedaço), ralado\n- 1 colher de sopa de caril em pó\n- ½ colher de chá de açafrão-da-índia moído\n- ½ colher de chá de cominhos moídos\n- 1 lata (400g / 14.5 oz) de tomate em cubos\n- 1 lata (400g / 14.5 oz) de grão-de-bico, escorrido e enxaguado\n- 400 ml (1½ chávenas) de leite de coco\n- 200 g (7 oz) de espinafres frescos\n- Sal, a gosto\n- Pimenta, a gosto",
+    "preparacao": "1. Aqueça o óleo vegetal num tacho grande ou panela de ferro fundido em lume médio. Adicione a cebola picada e cozinhe até amolecer, cerca de 5 minutos.\n2. Adicione o alho picado e o gengibre ralado. Cozinhe por mais um minuto até ficar aromático.\n3. Junte o caril em pó, o açafrão-da-índia e os cominhos. Cozinhe por 30 segundos, mexendo constantemente.\n4. Verta o tomate em cubos (não escorra), o grão-de-bico (escorrido e enxaguado) e o leite de coco. Deixe levantar fervura, depois reduza o lume para o mínimo, tape e cozinhe por 15 minutos, mexendo ocasionalmente.\n5. Adicione os espinafres frescos em lotes, deixando-os murchar antes de adicionar mais. Cozinhe até todos os espinafres murcharem e serem incorporados, cerca de 2-3 minutos.\n6. Tempere com sal e pimenta a gosto. Sirva quente com arroz ou pão naan.",
+    "categoria": "Prato Principal",
+    "imagem": null,
+    "porcoes": 4,
+    "tempoPreparacao": "15 min",
+    "tempoConfecao": "25 min",
+    "tags": [
+      "Caril",
+      "Grão-de-bico",
+      "Espinafres",
+      "Um Tacho",
+      "Vegetariano"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-03T21:45:03.219Z"
   }
 ]
