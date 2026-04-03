@@ -21,6 +21,14 @@
             <input type="text" id="pesquisa" placeholder="Pesquisar receitas...">
         </div>
 
+        <!-- Filtros -->
+        <div class="filtros">
+            <button class="filtro active" onclick="filtrarPor('todos')">Todos</button>
+            <button class="filtro" onclick="filtrarPor('favoritos')">❤️ Favoritos</button>
+            <div class="filtro-separador"></div>
+            <div id="filtros-categorias"></div>
+        </div>
+
         <!-- Lista de receitas -->
         <div class="receitas-grid" id="receitas-grid">
             <!-- As receitas aparecem aqui -->
