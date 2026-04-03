@@ -49,7 +49,8 @@ async function carregarReceitas() {
         const dados = await resposta.json();
 
         // O conteúdo vem em Base64 — temos de o converter para texto
-        const texto = atob(dados.content.replace(/\n/g, ''));
+        const bytes = Uint8Array.from(atob(dados.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+        const texto = new TextDecoder('utf-8').decode(bytes);
         todasAsReceitas = JSON.parse(texto);
 
         mostrarReceitas(todasAsReceitas);
