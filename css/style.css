@@ -437,3 +437,44 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
+
+/* ============================================
+   FILTROS
+   ============================================ */
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.filtro {
+    padding: 6px 14px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    font-size: 13px;
+    cursor: pointer;
+    color: #888;
+    white-space: nowrap;
+}
+
+.filtro.active {
+    background-color: #c8793a;
+    color: white;
+    border-color: #c8793a;
+}
+
+.filtro-separador {
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+}
+
+#filtros-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
