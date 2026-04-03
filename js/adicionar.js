@@ -95,11 +95,35 @@ async function processarReceita() {
 
         // Mostra o resultado para o utilizador rever
         if (resposta) {
+            // Campos principais
             document.getElementById('ingredientes').value = resposta.ingredientes || '';
             document.getElementById('preparacao').value = resposta.preparacao || '';
+
+            // Título (só preenche se estiver vazio)
             if (resposta.titulo && !document.getElementById('titulo').value) {
                 document.getElementById('titulo').value = resposta.titulo;
             }
+
+            // Campos opcionais extraídos pelo Gemini
+            if (resposta.categoria) {
+                document.getElementById('categoria').value = resposta.categoria;
+            }
+            if (resposta.porcoes) {
+                document.getElementById('porcoes').value = resposta.porcoes;
+            }
+            if (resposta.tempoPreparacao) {
+                document.getElementById('tempo-prep').value = resposta.tempoPreparacao;
+            }
+            if (resposta.tempoConfecao) {
+                document.getElementById('tempo-conf').value = resposta.tempoConfecao;
+            }
+            if (resposta.tags && resposta.tags.length > 0) {
+                document.getElementById('tags').value = resposta.tags.join(', ');
+            }
+
+            // Abre as opções extra para o utilizador rever
+            document.querySelector('.opcoes-extra').setAttribute('open', '');
+
             document.getElementById('resultado').style.display = 'block';
             document.getElementById('resultado').scrollIntoView({ behavior: 'smooth' });
         }
