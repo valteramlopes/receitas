@@ -14,6 +14,10 @@ const URL_RECEITAS = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}
 // Variável que guarda todas as receitas em memória
 let todasAsReceitas = [];
 
+// Filtro activo no momento
+let filtroActivo = 'todos';
+let termoPesquisa = '';
+
 /* ============================================
    INICIALIZAÇÃO
    ============================================ */
