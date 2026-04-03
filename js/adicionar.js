@@ -14,6 +14,56 @@ let tabActiva = 'texto';
 // Imagem carregada (em Base64)
 let imagemBase64 = null;
 
+// ID da receita a editar (null se for nova receita)
+let idEditar = null;
+
+// Verifica se está em modo de edição
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    idEditar = params.get('id');
+
+    if (idEditar) {
+        document.getElementById('pagina-titulo').textContent = 'Editar Receita';
+        document.getElementById('cabecalho-titulo').textContent = 'Editar Receita';
+        document.getElementById('btn-guardar').textContent = '💾 Guardar Alterações';
+        carregarReceitaParaEditar(idEditar);
+    }
+});
+
+async function carregarReceitaParaEditar(id) {
+    try {
+        const resposta = await fetch(URL_API);
+        const dados = await resposta.json();
+        const bytes = Uint8Array.from(atob(dados.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+        const texto = new TextDecoder('utf-8').decode(bytes);
+        const receitas = JSON.parse(texto);
+        const receita = receitas.find(r => r.id === id);
+
+        if (!receita) {
+            alert('Receita não encontrada.');
+            window.location.href = 'index.html';
+            return;
+        }
+
+        document.getElementById('titulo').value = receita.titulo || '';
+        document.getElementById('ingredientes').value = receita.ingredientes || '';
+        document.getElementById('preparacao').value = receita.preparacao || '';
+        document.getElementById('categoria').value = receita.categoria || '';
+        document.getElementById('imagem-url').value = receita.imagem || '';
+        document.getElementById('porcoes').value = receita.porcoes || '';
+        document.getElementById('tempo-prep').value = receita.tempoPreparacao || '';
+        document.getElementById('tempo-conf').value = receita.tempoConfecao || '';
+        document.getElementById('tags').value = receita.tags ? receita.tags.join(', ') : '';
+
+        document.getElementById('resultado').style.display = 'block';
+        document.querySelector('.opcoes-extra').setAttribute('open', '');
+
+    } catch (erro) {
+        console.error('Erro ao carregar receita:', erro);
+        alert('Erro ao carregar a receita.');
+    }
+}
+
 /* ============================================
    TABS DE INTRODUÇÃO DE RECEITA
    ============================================ */
