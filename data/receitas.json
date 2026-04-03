@@ -2,8 +2,8 @@
   {
     "id": "8872b4b3-6ed1-45af-9331-9123f017929f",
     "titulo": "Panquecas de aveia",
-    "ingredientes": "1 chávena (240 ml) de flocos de aveia\n1 banana madura\n1 ovo\n120 ml de bebida vegetal (ou leite)\n1 colher de chá de fermento em pó\nÓleo de coco para untar (ou azeite)\nToppings a gosto (fruta, mel, canela, etc.)",
-    "preparacao": "1. Num processador de alimentos, junte os flocos de aveia, a banana, o ovo, a bebida vegetal e o fermento em pó. Triture até obter uma massa homogénea.\n2. Aqueça uma frigideira antiaderente untada com um pouco de óleo de coco (ou azeite) em lume médio.\n3. Verta pequenas porções da massa na frigideira, formando as panquecas. Cozinhe por 2-3 minutos de cada lado, ou até estarem douradas e cozidas por dentro.\n4. Sirva as panquecas quentes, acompanhadas dos seus toppings preferidos.",
+    "ingredientes": "1 chÃ¡vena (240 ml) de flocos de aveia\n1 banana madura\n1 ovo\n120 ml de bebida vegetal (ou leite)\n1 colher de chÃ¡ de fermento em pÃ³\nÃleo de coco para untar (ou azeite)\nToppings a gosto (fruta, mel, canela, etc.)",
+    "preparacao": "1. Num processador de alimentos, junte os flocos de aveia, a banana, o ovo, a bebida vegetal e o fermento em pÃ³. Triture atÃ© obter uma massa homogÃ©nea.\n2. AqueÃ§a uma frigideira antiaderente untada com um pouco de Ã³leo de coco (ou azeite) em lume mÃ©dio.\n3. Verta pequenas porÃ§Ãµes da massa na frigideira, formando as panquecas. Cozinhe por 2-3 minutos de cada lado, ou atÃ© estarem douradas e cozidas por dentro.\n4. Sirva as panquecas quentes, acompanhadas dos seus toppings preferidos.",
     "categoria": "Lanches",
     "imagem": "https://feed.continente.pt/media/hfvi21a1/panquecas-de-aveia.png?anchor=center&mode=crop&width=826&height=620&rnd=134130452737430000&format=webp",
     "porcoes": 4,
@@ -12,11 +12,31 @@
     "tags": [
       "panquecas",
       "aveia",
-      "pequeno-almoço",
+      "pequeno-almoÃ§o",
       "lanche",
-      "fácil"
+      "fÃ¡cil"
     ],
     "favorito": false,
     "dataCriacao": "2026-04-03T21:16:50.141Z"
+  },
+  {
+    "id": "aa55fa3c-5ab2-4833-9dd4-1d27a61cabf7",
+    "titulo": "Caril de grão com espinafres",
+    "ingredientes": "2 colheres de sopa de azeite\n1 cebola, picada\n2 dentes de alho, picados\n1 colher de sopa de gengibre fresco, ralado\n1 colher de chá de açafrão-da-terra moído\n1 colher de chá de cominhos moídos\n1 colher de chá de coentros moídos\n1 pitada de pimenta caiena\n1 lata (400g) de tomate picado\n1 lata (400g) de grão-de-bico, escorrido e passado por água\n1 lata (400ml) de leite de coco\n100g de espinafres frescos\nSal e pimenta, a gosto\nCoentros frescos, para servir",
+    "preparacao": "1. Aquecer o azeite numa panela grande em lume médio. Adicionar a cebola picada e cozinhar até amolecer, cerca de 5 minutos.\n2. Adicionar o alho picado e o gengibre ralado, e cozinhar por mais um minuto até ficarem aromáticos. Juntar o açafrão-da-terra, cominhos, coentros e pimenta caiena. Cozinhar por 30 segundos, mexendo constantemente, até ficarem aromáticos.\n3. Verter o tomate picado e misturar bem. Deixar ferver e cozinhar por 5 minutos, permitindo que os sabores se fundam.\n4. Adicionar o grão-de-bico escorrido e passado por água e o leite de coco. Misturar tudo. Deixar ferver novamente e cozinhar por 10-15 minutos, mexendo ocasionalmente, até o caril engrossar ligeiramente.\n5. Adicionar os espinafres frescos e cozinhar até murcharem, cerca de 2-3 minutos.\n6. Temperar o caril com sal e pimenta a gosto. Servir quente, guarnecido com coentros frescos, se desejar.",
+    "categoria": "Prato Principal",
+    "imagem": "https://images.services.kitchenstories.io/AibbWnByy1Jn5rHyqjCZp4zSa5Q=/3840x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R3401_Final_4x3_new.jpg",
+    "porcoes": 4,
+    "tempoPreparacao": "10 min",
+    "tempoConfecao": "20 min",
+    "tags": [
+      "caril",
+      "grão-de-bico",
+      "espinafres",
+      "vegetariano",
+      "panela única"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-03T21:33:49.021Z"
   }
 ]
