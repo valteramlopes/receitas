@@ -175,7 +175,7 @@ async function eliminarReceita() {
 
 async function guardarAlteracoes(token, mensagem) {
     try {
-        const conteudoBase64 = btoa(unescape(encodeURIComponent(JSON.stringify(todasAsReceitas, null, 2))));
+        const conteudoBase64 = btoa(new TextEncoder().encode(JSON.stringify(todasAsReceitas, null, 2)).reduce((acc, byte) => acc + String.fromCharCode(byte), ''));
 
         const resposta = await fetch(URL_API, {
             method: 'PUT',
