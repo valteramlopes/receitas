@@ -2,8 +2,8 @@
   {
     "id": "6ae7cb57-8802-4470-a915-5ead7278fff7",
     "titulo": "Panquecas de Aveia",
-    "ingredientes": "480 ml (2 chávenas) de aveia em flocos finos\n240 ml (1 chávena) de água (leite ou iogurte)\n2 ovos\n45 ml (3 colheres de sopa) de mel\n5 ml (1 colher de chá) de extrato de baunilha\nCanela em pó q.b.\nÓleo de coco q.b.\nFrutas vermelhas q.b.\nMel q.b.",
-    "preparacao": "1. Triture os ingredientes todos juntos num processador até obter uma mistura homogénea.\n2. Numa frigideira untada com um pouco de óleo de coco, coza as panquecas, uma a uma.\n3. Passe as panquecas para um prato e faça uma torre de panquecas de aveia.\n4. Guarneça a gosto, com fruta, mel e o que mais lhe apetecer, porque a panqueca de aveia é uma tela em branco.",
+    "ingredientes": "480 ml (2 chÃ¡venas) de aveia em flocos finos\n240 ml (1 chÃ¡vena) de Ã¡gua (leite ou iogurte)\n2 ovos\n45 ml (3 colheres de sopa) de mel\n5 ml (1 colher de chÃ¡) de extrato de baunilha\nCanela em pÃ³ q.b.\nÃleo de coco q.b.\nFrutas vermelhas q.b.\nMel q.b.",
+    "preparacao": "1. Triture os ingredientes todos juntos num processador atÃ© obter uma mistura homogÃ©nea.\n2. Numa frigideira untada com um pouco de Ã³leo de coco, coza as panquecas, uma a uma.\n3. Passe as panquecas para um prato e faÃ§a uma torre de panquecas de aveia.\n4. GuarneÃ§a a gosto, com fruta, mel e o que mais lhe apetecer, porque a panqueca de aveia Ã© uma tela em branco.",
     "categoria": "Lanches",
     "imagem": "https://feed.continente.pt/media/hfvi21a1/panquecas-de-aveia.png?anchor=center&mode=crop&width=826&height=620&rnd=134130452737430000&format=webp",
     "porcoes": null,
@@ -11,5 +11,18 @@
     "tempoConfecao": null,
     "favorito": false,
     "dataCriacao": "2026-04-03T20:30:32.655Z"
+  },
+  {
+    "id": "013cb9f3-ba78-4aad-98e6-821d2238c73a",
+    "titulo": "Esparguete one pot (pesto e cogumelos)",
+    "ingredientes": "- 350 g de linguine\n- 280 g de cogumelos cremini\n- 6 dentes de alho\n- 1 litro de água\n- 60 ml de molho pesto\n- 230 g de queijo mascarpone\n- 2 colheres de sopa de azeite",
+    "preparacao": "Os passos de preparação para esta receita não estão disponíveis na imagem fornecida. Para saber como fazer o molho pesto caseiro, consulte a receita original do The Kitchn.",
+    "categoria": "Prato Principal",
+    "imagem": "https://www.casalmisterio.com/wp-content/uploads/2022/10/22078291_620h9.jpg",
+    "porcoes": null,
+    "tempoPreparacao": null,
+    "tempoConfecao": null,
+    "favorito": false,
+    "dataCriacao": "2026-04-03T20:36:19.205Z"
   }
 ]
