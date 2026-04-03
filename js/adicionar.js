@@ -282,7 +282,7 @@ async function guardarReceita() {
         receitas.push(novaReceita);
 
         // Guarda o ficheiro actualizado no GitHub
-        const conteudoBase64 = btoa(unescape(encodeURIComponent(JSON.stringify(receitas, null, 2))));
+       const conteudoBase64 = btoa(new TextEncoder().encode(JSON.stringify(receitas, null, 2)).reduce((acc, byte) => acc + String.fromCharCode(byte), ''));
 
         const corpo = {
             message: `Adicionar receita: ${titulo}`,
