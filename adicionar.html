@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Receita</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+        <h1>Adicionar Receita</h1>
+    </header>
+
+    <!-- Formulário -->
+    <main class="main">
+
+        <!-- Título -->
+        <div class="campo">
+            <label for="titulo">Título *</label>
+            <input type="text" id="titulo" placeholder="Ex: Bolo de chocolate">
+        </div>
+
+        <!-- Introdução da receita -->
+        <div class="campo">
+            <label>Receita</label>
+            <div class="tabs">
+                <button class="tab active" onclick="mostrarTab('texto')">📋 Colar texto</button>
+                <button class="tab" onclick="mostrarTab('imagem')">📷 Imagem</button>
+                <button class="tab" onclick="mostrarTab('link')">🔗 Link</button>
+            </div>
+
+            <!-- Tab: texto -->
+            <div id="tab-texto" class="tab-conteudo">
+                <textarea id="texto-receita" placeholder="Cola aqui o texto da receita (ingredientes, preparação, etc.)..." rows="8"></textarea>
+            </div>
+
+            <!-- Tab: imagem -->
+            <div id="tab-imagem" class="tab-conteudo" style="display:none">
+                <div class="upload-area" onclick="document.getElementById('ficheiro-imagem').click()">
+                    <div id="upload-preview">
+                        <div style="font-size:40px">📷</div>
+                        <p>Toca para escolher uma imagem</p>
+                        <p style="font-size:12px; color:#aaa">Foto de livro, screenshot, etc.</p>
+                    </div>
+                    <input type="file" id="ficheiro-imagem" accept="image/*" style="display:none" onchange="previewImagem(this)">
+                </div>
+            </div>
+
+            <!-- Tab: link -->
+            <div id="tab-link" class="tab-conteudo" style="display:none">
+                <input type="url" id="url-receita" placeholder="https://exemplo.com/receita">
+                <p class="nota">A app vai tentar ler o conteúdo da página. Alguns sites podem não permitir.</p>
+            </div>
+        </div>
+
+        <!-- Botão processar -->
+        <button class="btn-processar" onclick="processarReceita()">
+            ✨ Processar com IA
+        </button>
+        <p class="nota">O Gemini vai organizar, traduzir e converter unidades automaticamente.</p>
+
+        <!-- Resultado do processamento -->
+        <div id="resultado" style="display:none">
+            <div class="campo">
+                <label for="ingredientes">Ingredientes</label>
+                <textarea id="ingredientes" rows="6" placeholder="Um ingrediente por linha..."></textarea>
+            </div>
+            <div class="campo">
+                <label for="preparacao">Preparação</label>
+                <textarea id="preparacao" rows="8" placeholder="Um passo por linha..."></textarea>
+            </div>
+        </div>
+
+        <!-- Campos opcionais -->
+        <details class="opcoes-extra">
+            <summary>Mais opções (opcional)</summary>
+            <div class="campo">
+                <label for="categoria">Categoria</label>
+                <select id="categoria">
+                    <option value="">-- Escolher --</option>
+                    <option>Entradas</option>
+                    <option>Sopas</option>
+                    <option>Prato Principal</option>
+                    <option>Sobremesas</option>
+                    <option>Lanches</option>
+                    <option>Bebidas</option>
+                    <option>Pães</option>
+                    <option>Molhos</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="imagem-url">URL da imagem</label>
+                <input type="url" id="imagem-url" placeholder="https://exemplo.com/imagem.jpg">
+            </div>
+            <div class="campo">
+                <label for="porcoes">Porções</label>
+                <input type="number" id="porcoes" placeholder="Ex: 4">
+            </div>
+            <div class="campo">
+                <label for="tempo-prep">Tempo de preparação</label>
+                <input type="text" id="tempo-prep" placeholder="Ex: 20 min">
+            </div>
+            <div class="campo">
+                <label for="tempo-conf">Tempo de confeção</label>
+                <input type="text" id="tempo-conf" placeholder="Ex: 45 min">
+            </div>
+        </details>
+
+        <!-- Botão guardar -->
+        <button class="btn-guardar" onclick="guardarReceita()">
+            💾 Guardar Receita
+        </button>
+
+    </main>
+
+    <!-- Barra de navegação inferior -->
+    <nav class="nav-bottom">
+        <a href="index.html" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Receitas</span>
+        </a>
+        <a href="adicionar.html" class="nav-item active">
+            <span class="nav-icon">➕</span>
+            <span class="nav-label">Adicionar</span>
+        </a>
+        <a href="favoritos.html" class="nav-item">
+            <span class="nav-icon">❤️</span>
+            <span class="nav-label">Favoritos</span>
+        </a>
+    </nav>
+
+    <script src="js/adicionar.js"></script>
+
+</body>
+</html>
