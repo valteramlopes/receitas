@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "6ae7cb57-8802-4470-a915-5ead7278fff7",
+    "titulo": "Panquecas de Aveia",
+    "ingredientes": "480 ml (2 chávenas) de aveia em flocos finos\n240 ml (1 chávena) de água (leite ou iogurte)\n2 ovos\n45 ml (3 colheres de sopa) de mel\n5 ml (1 colher de chá) de extrato de baunilha\nCanela em pó q.b.\nÓleo de coco q.b.\nFrutas vermelhas q.b.\nMel q.b.",
+    "preparacao": "1. Triture os ingredientes todos juntos num processador até obter uma mistura homogénea.\n2. Numa frigideira untada com um pouco de óleo de coco, coza as panquecas, uma a uma.\n3. Passe as panquecas para um prato e faça uma torre de panquecas de aveia.\n4. Guarneça a gosto, com fruta, mel e o que mais lhe apetecer, porque a panqueca de aveia é uma tela em branco.",
+    "categoria": "Lanches",
+    "imagem": "https://feed.continente.pt/media/hfvi21a1/panquecas-de-aveia.png?anchor=center&mode=crop&width=826&height=620&rnd=134130452737430000&format=webp",
+    "porcoes": null,
+    "tempoPreparacao": null,
+    "tempoConfecao": null,
+    "favorito": false,
+    "dataCriacao": "2026-04-03T20:30:32.655Z"
+  }
+]
