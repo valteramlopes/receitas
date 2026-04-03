@@ -355,7 +355,8 @@ async function guardarReceita() {
         if (respostaLeitura.ok) {
             const dadosActuais = await respostaLeitura.json();
             sha = dadosActuais.sha;
-            const textoActual = atob(dadosActuais.content.replace(/\n/g, ''));
+            const bytes = Uint8Array.from(atob(dadosActuais.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+            const textoActual = new TextDecoder('utf-8').decode(bytes);
             receitas = JSON.parse(textoActual);
         }
 
