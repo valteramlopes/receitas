@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "919b3045-6942-4aa0-8c30-5adad0e0da53",
+    "titulo": "Esparguete one pot (pesto e cogumelos)",
+    "ingredientes": "350 g de linguine\n280 g de cogumelos cremini\n6 dentes de alho\n1 litro de água\n60 ml de molho pesto\n230 g de queijo mascarpone\n2 colheres de sopa de azeite",
+    "preparacao": null,
+    "categoria": "Prato Principal",
+    "imagem": null,
+    "porcoes": 4,
+    "tempoPreparacao": null,
+    "tempoConfecao": null,
+    "tags": [
+      "linguine",
+      "pesto",
+      "cogumelos",
+      "mascarpone",
+      "massa"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-03T21:48:04.398Z"
+  }
+]
