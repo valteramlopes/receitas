@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Liga a pesquisa ao campo de texto
     document.getElementById('pesquisa').addEventListener('input', function() {
-        filtrarReceitas(this.value);
+        termoPesquisa = this.value;
+        aplicarFiltros();
     });
 });
 
@@ -71,6 +72,9 @@ async function carregarReceitas() {
 
 function mostrarReceitas(receitas) {
     const grid = document.getElementById('receitas-grid');
+
+   // Actualiza os filtros de categorias com base em todas as receitas
+    criarFiltrosCategorias(todasAsReceitas);
 
     if (receitas.length === 0) {
         grid.innerHTML = `
@@ -125,20 +129,49 @@ function criarCartao(receita) {
    FILTRAR RECEITAS POR TEXTO
    ============================================ */
 
-function filtrarReceitas(texto) {
-    if (!texto.trim()) {
-        mostrarReceitas(todasAsReceitas);
-        return;
+function filtrarPor(filtro) {
+    filtroActivo = filtro;
+
+    // Actualiza botões
+    document.querySelectorAll('.filtro').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    aplicarFiltros();
+}
+
+function aplicarFiltros() {
+    let resultado = [...todasAsReceitas];
+
+    // Filtro por favoritos ou categoria
+    if (filtroActivo === 'favoritos') {
+        resultado = resultado.filter(r => r.favorito);
+    } else if (filtroActivo !== 'todos') {
+        resultado = resultado.filter(r => r.categoria === filtroActivo);
     }
 
-    const termoPesquisa = texto.toLowerCase();
-    const filtradas = todasAsReceitas.filter(receita => 
-        receita.titulo.toLowerCase().includes(termoPesquisa) ||
-        (receita.ingredientes && receita.ingredientes.toLowerCase().includes(termoPesquisa)) ||
-        (receita.categoria && receita.categoria.toLowerCase().includes(termoPesquisa))
-    );
+    // Filtro por texto de pesquisa
+    if (termoPesquisa.trim()) {
+        const termo = termoPesquisa.toLowerCase();
+        resultado = resultado.filter(r =>
+            r.titulo.toLowerCase().includes(termo) ||
+            (r.ingredientes && r.ingredientes.toLowerCase().includes(termo)) ||
+            (r.categoria && r.categoria.toLowerCase().includes(termo))
+        );
+    }
 
-    mostrarReceitas(filtradas);
+    mostrarReceitas(resultado);
+}
+
+function criarFiltrosCategorias(receitas) {
+    const categorias = [...new Set(receitas
+        .map(r => r.categoria)
+        .filter(c => c)
+    )].sort();
+
+    const container = document.getElementById('filtros-categorias');
+    container.innerHTML = categorias
+        .map(c => `<button class="filtro" onclick="filtrarPor('${c}')">${c}</button>`)
+        .join('');
 }
 
 /* ============================================
