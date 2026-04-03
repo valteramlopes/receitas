@@ -41,7 +41,8 @@ async function carregarReceita(id) {
         shaActual = dados.sha;
 
         // Corrige a codificação de caracteres portugueses
-        const texto = decodeURIComponent(escape(atob(dados.content.replace(/\n/g, ''))));
+        const bytes = Uint8Array.from(atob(dados.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+        const texto = new TextDecoder('utf-8').decode(bytes);
         todasAsReceitas = JSON.parse(texto);
 
         receitaActual = todasAsReceitas.find(r => r.id === id);
