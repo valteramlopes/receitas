@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+        <h1 id="receita-titulo">A carregar...</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+
+        <!-- Imagem -->
+        <div id="receita-imagem-container"></div>
+
+        <!-- Meta informação -->
+        <div id="receita-meta" class="receita-meta"></div>
+
+        <!-- Tags -->
+        <div id="receita-tags" class="receita-tags"></div>
+
+        <!-- Ingredientes -->
+        <div id="receita-ingredientes-container" style="display:none">
+            <h2 class="secao-titulo">Ingredientes</h2>
+            <ul class="ingredientes-lista" id="receita-ingredientes"></ul>
+        </div>
+
+        <!-- Preparação -->
+        <div id="receita-preparacao-container" style="display:none">
+            <h2 class="secao-titulo">Preparação</h2>
+            <ol class="preparacao-lista" id="receita-preparacao"></ol>
+        </div>
+
+        <!-- Botões de acção -->
+        <div class="accoes">
+            <button class="btn-favorito" id="btn-favorito" onclick="toggleFavorito()">🤍 Favorito</button>
+            <a id="btn-editar" href="#" class="btn-editar">✏️ Editar</a>
+            <button class="btn-eliminar" onclick="eliminarReceita()">🗑️ Eliminar</button>
+        </div>
+
+    </main>
+
+    <!-- Barra de navegação inferior -->
+    <nav class="nav-bottom">
+        <a href="index.html" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Receitas</span>
+        </a>
+        <a href="adicionar.html" class="nav-item">
+            <span class="nav-icon">➕</span>
+            <span class="nav-label">Adicionar</span>
+        </a>
+        <a href="favoritos.html" class="nav-item">
+            <span class="nav-icon">❤️</span>
+            <span class="nav-label">Favoritos</span>
+        </a>
+    </nav>
+
+    <script src="js/receita.js"></script>
+
+</body>
+</html>
