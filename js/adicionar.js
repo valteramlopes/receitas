@@ -122,6 +122,11 @@ async function processarTexto(texto, apiKey) {
 - "titulo": nome da receita (string)
 - "ingredientes": ingredientes organizados, um por linha, em português de Portugal, com unidades métricas (string)
 - "preparacao": passos numerados, um por linha, em português de Portugal (string)
+- "categoria": uma destas opções se aplicável: Entradas, Sopas, Prato Principal, Sobremesas, Lanches, Bebidas, Pães, Molhos, Outros (string ou null)
+- "porcoes": número de porções se mencionado (número ou null)
+- "tempoPreparacao": tempo de preparação se mencionado, ex: "20 min" (string ou null)
+- "tempoConfecao": tempo de confeção se mencionado, ex: "45 min" (string ou null)
+- "tags": até 5 palavras-chave relevantes em português, ex: ["forno", "chocolate", "fácil"] (array ou null)
 
 Regras:
 - Converte unidades não-métricas para métricas (cups→ml, oz→g, °F→°C, etc.), mantendo o valor original entre parênteses
