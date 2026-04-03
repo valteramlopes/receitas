@@ -18,7 +18,6 @@ let shaActual = null;
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Lê o ID da receita do URL (ex: receita.html?id=123)
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
 
@@ -40,7 +39,9 @@ async function carregarReceita(id) {
         const dados = await resposta.json();
 
         shaActual = dados.sha;
-        const texto = atob(dados.content.replace(/\n/g, ''));
+
+        // Corrige a codificação de caracteres portugueses
+        const texto = decodeURIComponent(escape(atob(dados.content.replace(/\n/g, ''))));
         todasAsReceitas = JSON.parse(texto);
 
         receitaActual = todasAsReceitas.find(r => r.id === id);
@@ -100,20 +101,26 @@ function mostrarReceita(receita) {
         document.getElementById('receita-tags').innerHTML = tags.join('');
     }
 
-    // Ingredientes
+    // Ingredientes — separa por vírgula OU por nova linha
     if (receita.ingredientes) {
-        const linhas = receita.ingredientes.split('\n').filter(l => l.trim());
+        const linhas = receita.ingredientes
+            .split(/,|\n/)
+            .map(l => l.trim())
+            .filter(l => l.length > 0);
         document.getElementById('receita-ingredientes').innerHTML = linhas
-            .map(l => `<li>${l.trim()}</li>`)
+            .map(l => `<li>${l}</li>`)
             .join('');
         document.getElementById('receita-ingredientes-container').style.display = 'block';
     }
 
-    // Preparação
+    // Preparação — separa por ponto seguido de número OU por nova linha
     if (receita.preparacao) {
-        const linhas = receita.preparacao.split('\n').filter(l => l.trim());
+        const linhas = receita.preparacao
+            .split(/(?=\d+\.)\s*|\n/)
+            .map(l => l.replace(/^\d+\.\s*/, '').trim())
+            .filter(l => l.length > 0);
         document.getElementById('receita-preparacao').innerHTML = linhas
-            .map(l => `<li>${l.trim()}</li>`)
+            .map(l => `<li>${l}</li>`)
             .join('');
         document.getElementById('receita-preparacao-container').style.display = 'block';
     }
@@ -187,7 +194,6 @@ async function guardarAlteracoes(token, mensagem) {
             throw new Error('Erro ao guardar');
         }
 
-        // Actualiza o SHA para futuras operações
         const dados = await resposta.json();
         shaActual = dados.content.sha;
 
