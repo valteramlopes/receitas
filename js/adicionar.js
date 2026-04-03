@@ -325,6 +325,12 @@ async function guardarReceita() {
         return;
     }
 
+    // Modo edição — actualiza a receita existente
+    if (idEditar) {
+        await actualizarReceita(titulo, ingredientes, preparacao);
+        return;
+    }
+
     // Vai buscar o token do GitHub guardado no browser
     let githubToken = localStorage.getItem('github_token');
     if (!githubToken) {
@@ -404,6 +410,82 @@ async function guardarReceita() {
         console.error(erro);
     } finally {
         btnGuardar.textContent = '💾 Guardar Receita';
+        btnGuardar.disabled = false;
+    }
+}
+
+async function actualizarReceita(titulo, ingredientes, preparacao) {
+    let githubToken = localStorage.getItem('github_token');
+    if (!githubToken) {
+        githubToken = prompt('Introduz o teu GitHub Personal Access Token:');
+        if (!githubToken) return;
+        localStorage.setItem('github_token', githubToken);
+    }
+
+    const btnGuardar = document.getElementById('btn-guardar');
+    btnGuardar.textContent = '⏳ A guardar...';
+    btnGuardar.disabled = true;
+
+    try {
+        const respostaLeitura = await fetch(URL_API, {
+            headers: { 'Authorization': `token ${githubToken}` }
+        });
+
+        const dadosActuais = await respostaLeitura.json();
+        const sha = dadosActuais.sha;
+        const bytes = Uint8Array.from(atob(dadosActuais.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+        const texto = new TextDecoder('utf-8').decode(bytes);
+        let receitas = JSON.parse(texto);
+
+        // Encontra e actualiza a receita
+        const indice = receitas.findIndex(r => r.id === idEditar);
+        if (indice === -1) {
+            alert('Receita não encontrada.');
+            return;
+        }
+
+        receitas[indice] = {
+            ...receitas[indice],
+            titulo: titulo,
+            ingredientes: ingredientes || null,
+            preparacao: preparacao || null,
+            categoria: document.getElementById('categoria').value || null,
+            imagem: document.getElementById('imagem-url').value.trim() || null,
+            porcoes: document.getElementById('porcoes').value ? Number(document.getElementById('porcoes').value) : null,
+            tempoPreparacao: document.getElementById('tempo-prep').value.trim() || null,
+            tempoConfecao: document.getElementById('tempo-conf').value.trim() || null,
+            tags: document.getElementById('tags').value
+                ? document.getElementById('tags').value.split(',').map(t => t.trim()).filter(t => t)
+                : null
+        };
+
+        const conteudoBase64 = btoa(new TextEncoder().encode(JSON.stringify(receitas, null, 2)).reduce((acc, byte) => acc + String.fromCharCode(byte), ''));
+
+        const respostaEscrita = await fetch(URL_API, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: `Editar receita: ${titulo}`,
+                content: conteudoBase64,
+                sha: sha
+            })
+        });
+
+        if (!respostaEscrita.ok) {
+            throw new Error('Erro ao guardar');
+        }
+
+        alert('Receita actualizada com sucesso! ✅');
+        window.location.href = `receita.html?id=${idEditar}`;
+
+    } catch (erro) {
+        alert('Erro ao guardar as alterações.');
+        console.error(erro);
+    } finally {
+        btnGuardar.textContent = '💾 Guardar Alterações';
         btnGuardar.disabled = false;
     }
 }
