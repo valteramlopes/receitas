@@ -314,6 +314,9 @@ async function guardarReceita() {
             porcoes: document.getElementById('porcoes').value ? Number(document.getElementById('porcoes').value) : null,
             tempoPreparacao: document.getElementById('tempo-prep').value.trim() || null,
             tempoConfecao: document.getElementById('tempo-conf').value.trim() || null,
+            tags: document.getElementById('tags').value
+                ? document.getElementById('tags').value.split(',').map(t => t.trim()).filter(t => t)
+                : null,
             favorito: false,
             dataCriacao: new Date().toISOString()
         };
