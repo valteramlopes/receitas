@@ -78,5 +78,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-04T12:04:50.223Z"
+  },
+  {
+    "id": "c0d4cdae-8b22-4569-8121-0a5f630cc871",
+    "titulo": "Teste",
+    "ingredientes": "350 g de linguine\n280 g de cogumelos cremini\n6 dentes de alho\n1 litro de água\n60 ml de molho pesto\n230 g de queijo mascarpone\n2 colheres de sopa de azeite",
+    "preparacao": "Não foram fornecidos passos de preparação.",
+    "categoria": "Prato Principal",
+    "imagem": null,
+    "porcoes": 4,
+    "tempoPreparacao": null,
+    "tempoConfecao": null,
+    "tags": [
+      "massas",
+      "pesto",
+      "cogumelos",
+      "mascarpone",
+      "jantar"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-04T12:18:00.156Z"
   }
 ]
