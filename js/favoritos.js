@@ -2,11 +2,31 @@
    FAVORITOS.JS — Lógica da página de favoritos
    ============================================ */
 
-// Configuração do GitHub
-const GITHUB_USER = 'valteramlopes';
-const GITHUB_REPO = 'receitas';
 const GITHUB_FILE = 'data/receitas.json';
-const URL_API = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+
+function obterConfigGitHub() {
+    let user = localStorage.getItem('github_user');
+    let repo = localStorage.getItem('github_repo');
+
+    if (!user) {
+        user = prompt('Introduz o teu username do GitHub:');
+        if (!user) return null;
+        localStorage.setItem('github_user', user.trim());
+    }
+
+    if (!repo) {
+        repo = prompt('Introduz o nome do repositório (ex: receitas):');
+        if (!repo) return null;
+        localStorage.setItem('github_repo', repo.trim());
+    }
+
+    return { user, repo };
+}
+
+const config = obterConfigGitHub();
+const URL_API = config
+    ? `https://api.github.com/repos/${config.user}/${config.repo}/contents/${GITHUB_FILE}`
+    : null;
 
 /* ============================================
    INICIALIZAÇÃO
