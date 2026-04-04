@@ -2,14 +2,32 @@
    APP.JS — Lógica principal da app
    ============================================ */
 
-// Endereço do ficheiro de receitas no GitHub
-// ATENÇÃO: substitui 'valteramlopes' pelo teu username e 'receitas' pelo nome do teu repositório
-const GITHUB_USER = 'valteramlopes';
-const GITHUB_REPO = 'receitas';
 const GITHUB_FILE = 'data/receitas.json';
 
-// URL para ler o ficheiro de receitas via API do GitHub
-const URL_RECEITAS = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+// Obtém configuração do GitHub guardada no browser
+function obterConfigGitHub() {
+    let user = localStorage.getItem('github_user');
+    let repo = localStorage.getItem('github_repo');
+
+    if (!user) {
+        user = prompt('Introduz o teu username do GitHub:');
+        if (!user) return null;
+        localStorage.setItem('github_user', user.trim());
+    }
+
+    if (!repo) {
+        repo = prompt('Introduz o nome do repositório (ex: receitas):');
+        if (!repo) return null;
+        localStorage.setItem('github_repo', repo.trim());
+    }
+
+    return { user, repo };
+}
+
+const config = obterConfigGitHub();
+const URL_RECEITAS = config
+    ? `https://api.github.com/repos/${config.user}/${config.repo}/contents/${GITHUB_FILE}`
+    : null;
 
 // Variável que guarda todas as receitas em memória
 let todasAsReceitas = [];
