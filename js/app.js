@@ -150,9 +150,15 @@ function criarCartao(receita) {
 function filtrarPor(filtro) {
     filtroActivo = filtro;
 
-    // Actualiza botões
+    // Remove active de todos
     document.querySelectorAll('.filtro').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+
+    // Adiciona active apenas ao botão "Todos" ou ao clicado
+    if (filtro === 'todos') {
+        document.querySelector('.filtro').classList.add('active');
+    } else {
+        event.target.classList.add('active');
+    }
 
     aplicarFiltros();
 }
@@ -188,7 +194,7 @@ function criarFiltrosCategorias(receitas) {
 
     const container = document.getElementById('filtros-categorias');
     container.innerHTML = categorias
-        .map(c => `<button class="filtro" onclick="filtrarPor('${c}')">${c}</button>`)
+        .map(c => `<button class="filtro categoria-filtro" onclick="filtrarPor('${c}')">${c}</button>`)
         .join('');
 }
 
