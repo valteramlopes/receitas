@@ -10,10 +10,10 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: #faf8f5;
-    color: #2c2c2c;
+    background-color: #121212;
+    color: #e8e8e8;
     min-height: 100vh;
-    padding-bottom: 80px; /* espaço para a barra de navegação */
+    padding-bottom: 80px;
 }
 
 /* ============================================
@@ -21,17 +21,19 @@ body {
    ============================================ */
 
 .header {
-    background-color: #c8793a;
-    color: white;
+    background-color: #1e1e1e;
+    color: #e8e8e8;
     padding: 16px 20px;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid #2a2a2a;
 }
 
 .header h1 {
     font-size: 22px;
     font-weight: 700;
+    color: #e8831a;
 }
 
 /* ============================================
@@ -55,15 +57,20 @@ body {
 .search-bar input {
     width: 100%;
     padding: 12px 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #2a2a2a;
     border-radius: 12px;
     font-size: 16px;
-    background-color: white;
+    background-color: #1e1e1e;
+    color: #e8e8e8;
     outline: none;
 }
 
+.search-bar input::placeholder {
+    color: #666;
+}
+
 .search-bar input:focus {
-    border-color: #c8793a;
+    border-color: #e8831a;
 }
 
 /* ============================================
@@ -76,7 +83,6 @@ body {
     gap: 12px;
 }
 
-/* 2 colunas em ecrãs maiores */
 @media (min-width: 600px) {
     .receitas-grid {
         grid-template-columns: 1fr 1fr;
@@ -88,12 +94,13 @@ body {
    ============================================ */
 
 .cartao {
-    background-color: white;
+    background-color: #1e1e1e;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     cursor: pointer;
     transition: transform 0.2s;
+    border: 1px solid #2a2a2a;
 }
 
 .cartao:active {
@@ -104,7 +111,7 @@ body {
     width: 100%;
     height: 160px;
     object-fit: cover;
-    background-color: #f0ebe3;
+    background-color: #2a2a2a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,6 +126,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 4px;
+    color: #e8e8e8;
 }
 
 .cartao-categoria {
@@ -141,8 +149,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: white;
-    border-top: 1px solid #eee;
+    background-color: #1e1e1e;
+    border-top: 1px solid #2a2a2a;
     display: flex;
     justify-content: space-around;
     padding: 8px 0;
@@ -154,7 +162,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #888;
+    color: #666;
     font-size: 12px;
     padding: 4px 20px;
     min-width: 44px;
@@ -163,24 +171,66 @@ body {
 }
 
 .nav-item.active {
-    color: #c8793a;
+    color: #e8831a;
 }
 
 .nav-icon {
     font-size: 22px;
     margin-bottom: 2px;
 }
+
+/* ============================================
+   FILTROS
+   ============================================ */
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.filtro {
+    padding: 6px 14px;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    background: #1e1e1e;
+    font-size: 13px;
+    cursor: pointer;
+    color: #888;
+    white-space: nowrap;
+}
+
+.filtro.active {
+    background-color: #e8831a;
+    color: #121212;
+    border-color: #e8831a;
+    font-weight: 600;
+}
+
+.filtro-separador {
+    width: 1px;
+    height: 20px;
+    background-color: #2a2a2a;
+}
+
+#filtros-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 /* ============================================
    PÁGINA DE ADICIONAR RECEITA
    ============================================ */
 
 .header .btn-voltar {
-    color: white;
+    color: #e8831a;
     text-decoration: none;
     font-size: 15px;
     display: block;
     margin-bottom: 4px;
-    opacity: 0.85;
 }
 
 .campo {
@@ -191,7 +241,7 @@ body {
     display: block;
     font-size: 14px;
     font-weight: 600;
-    color: #555;
+    color: #aaa;
     margin-bottom: 6px;
 }
 
@@ -200,18 +250,29 @@ body {
 .campo textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #2a2a2a;
     border-radius: 12px;
     font-size: 15px;
-    background-color: white;
+    background-color: #1e1e1e;
+    color: #e8e8e8;
     outline: none;
     font-family: inherit;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #555;
+}
+
+.campo select option {
+    background-color: #1e1e1e;
+    color: #e8e8e8;
 }
 
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-    border-color: #c8793a;
+    border-color: #e8831a;
 }
 
 .campo textarea {
@@ -228,38 +289,39 @@ body {
 .tab {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #2a2a2a;
     border-radius: 10px;
-    background: white;
+    background: #1e1e1e;
     font-size: 13px;
     cursor: pointer;
-    color: #888;
+    color: #666;
 }
 
 .tab.active {
-    background-color: #c8793a;
-    color: white;
-    border-color: #c8793a;
+    background-color: #e8831a;
+    color: #121212;
+    border-color: #e8831a;
+    font-weight: 600;
 }
 
 /* Área de upload de imagem */
 .upload-area {
-    border: 2px dashed #ddd;
+    border: 2px dashed #2a2a2a;
     border-radius: 12px;
     padding: 32px;
     text-align: center;
     cursor: pointer;
-    color: #888;
+    color: #666;
 }
 
 .upload-area:active {
-    background-color: #faf8f5;
+    background-color: #1e1e1e;
 }
 
 /* Nota informativa */
 .nota {
     font-size: 12px;
-    color: #aaa;
+    color: #555;
     margin-top: 6px;
     margin-bottom: 16px;
 }
@@ -268,8 +330,8 @@ body {
 .btn-processar {
     width: 100%;
     padding: 14px;
-    background-color: #5b8a5b;
-    color: white;
+    background-color: #2a5c2a;
+    color: #e8e8e8;
     border: none;
     border-radius: 12px;
     font-size: 16px;
@@ -279,15 +341,15 @@ body {
 }
 
 .btn-processar:disabled {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 /* Botão guardar */
 .btn-guardar {
     width: 100%;
     padding: 16px;
-    background-color: #c8793a;
-    color: white;
+    background-color: #e8831a;
+    color: #121212;
     border: none;
     border-radius: 12px;
     font-size: 17px;
@@ -297,7 +359,7 @@ body {
 }
 
 .btn-guardar:disabled {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 /* Opções extra */
@@ -308,10 +370,11 @@ body {
 .opcoes-extra summary {
     font-size: 14px;
     font-weight: 600;
-    color: #c8793a;
+    color: #e8831a;
     cursor: pointer;
     padding: 8px 0;
 }
+
 /* ============================================
    PÁGINA DE DETALHE DA RECEITA
    ============================================ */
@@ -332,11 +395,12 @@ body {
 }
 
 .meta-item {
-    background-color: #f0ebe3;
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 13px;
-    color: #555;
+    color: #aaa;
 }
 
 .receita-tags {
@@ -347,7 +411,8 @@ body {
 }
 
 .tag {
-    background-color: #f0ebe3;
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
     padding: 4px 10px;
     border-radius: 20px;
     font-size: 12px;
@@ -355,14 +420,16 @@ body {
 }
 
 .tag.categoria {
-    background-color: #c8793a;
-    color: white;
+    background-color: #e8831a;
+    color: #121212;
+    border-color: #e8831a;
+    font-weight: 600;
 }
 
 .secao-titulo {
     font-size: 18px;
     font-weight: 700;
-    color: #2c2c2c;
+    color: #e8831a;
     margin-bottom: 12px;
     margin-top: 24px;
 }
@@ -374,15 +441,16 @@ body {
 
 .ingredientes-lista li {
     padding: 10px 0;
-    border-bottom: 1px solid #f0ebe3;
+    border-bottom: 1px solid #2a2a2a;
     font-size: 15px;
     padding-left: 20px;
     position: relative;
+    color: #e8e8e8;
 }
 
 .ingredientes-lista li::before {
     content: '•';
-    color: #c8793a;
+    color: #e8831a;
     position: absolute;
     left: 0;
 }
@@ -393,9 +461,10 @@ body {
 
 .preparacao-lista li {
     padding: 10px 0;
-    border-bottom: 1px solid #f0ebe3;
+    border-bottom: 1px solid #2a2a2a;
     font-size: 15px;
     line-height: 1.5;
+    color: #e8e8e8;
 }
 
 .accoes {
@@ -408,9 +477,10 @@ body {
 .btn-favorito {
     flex: 1;
     padding: 12px;
-    border: 2px solid #ddd;
+    border: 1px solid #2a2a2a;
     border-radius: 12px;
-    background: white;
+    background: #1e1e1e;
+    color: #e8e8e8;
     font-size: 14px;
     cursor: pointer;
 }
@@ -418,10 +488,10 @@ body {
 .btn-editar {
     flex: 1;
     padding: 12px;
-    border: 2px solid #c8793a;
+    border: 1px solid #e8831a;
     border-radius: 12px;
-    background: white;
-    color: #c8793a;
+    background: transparent;
+    color: #e8831a;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
@@ -430,51 +500,10 @@ body {
 .btn-eliminar {
     flex: 1;
     padding: 12px;
-    border: 2px solid #e74c3c;
+    border: 1px solid #c0392b;
     border-radius: 12px;
-    background: white;
-    color: #e74c3c;
+    background: transparent;
+    color: #c0392b;
     font-size: 14px;
     cursor: pointer;
-}
-
-/* ============================================
-   FILTROS
-   ============================================ */
-
-.filtros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
-    align-items: center;
-}
-
-.filtro {
-    padding: 6px 14px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background: white;
-    font-size: 13px;
-    cursor: pointer;
-    color: #888;
-    white-space: nowrap;
-}
-
-.filtro.active {
-    background-color: #c8793a;
-    color: white;
-    border-color: #c8793a;
-}
-
-.filtro-separador {
-    width: 1px;
-    height: 20px;
-    background-color: #ddd;
-}
-
-#filtros-categorias {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
 }
