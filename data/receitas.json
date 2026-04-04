@@ -58,5 +58,25 @@
     ],
     "favorito": true,
     "dataCriacao": "2026-04-03T21:50:32.607Z"
+  },
+  {
+    "id": "5953d99f-5043-4f9d-9399-b5d60cb156ee",
+    "titulo": "Brownies com queijo cottage",
+    "ingredientes": "100 g manteiga sem sal\n100 g chocolate de culinária 70% cacau\n200 g açúcar\n2 ovos grandes\n5 ml (1 colher de chá) extrato de baunilha\n95 g farinha de trigo sem fermento\n30 g cacau em pó\n2 g (¼ colher de chá) sal\n-- Para o creme de queijo cottage --\n175 g queijo cottage\n1 ovo\n25 g açúcar\n10 g farinha de trigo sem fermento\n1 pitada de sal\n-- Para finalizar --\n30 g pepitas de chocolate",
+    "preparacao": "1. Pré-aqueça o forno a 175°C. Unte e forre uma forma quadrada de 20x20cm com papel vegetal.\n2. Numa panela em lume brando, derreta a manteiga com o chocolate. Retire do lume e junte o açúcar. Deixe arrefecer um pouco.\n3. Numa taça à parte, bata os dois ovos grandes com a baunilha e junte ao preparado de chocolate e açúcar. Mexa bem.\n4. Peneire a farinha, o cacau em pó e 2 g (¼ colher de chá) de sal. Junte ao preparado anterior e mexa bem.\n5. Para o creme de queijo cottage, bata o queijo cottage com o ovo, 25 g de açúcar, 10 g de farinha e uma pitada de sal.\n6. Deite metade da massa dos brownies na forma. Por cima, distribua o creme de queijo cottage e, de seguida, coloque o restante preparado dos brownies.\n7. Com a ajuda de uma colher, faça pequenos redemoinhos. Polvilhe com as pepitas de chocolate.\n8. Leve ao forno durante 30 a 35 minutos, ou até que um palito espetado no centro saia com algumas migalhas húmidas. Não cozinhe demais, os brownies devem ficar húmidos no centro.\n9. Retire do forno e deixe arrefecer completamente antes de cortar em quadrados.",
+    "categoria": "Sobremesas",
+    "imagem": "https://www.casalmisterio.com/wp-content/uploads/2026/03/17500-cottage-cheese-brownies.jpg",
+    "porcoes": null,
+    "tempoPreparacao": null,
+    "tempoConfecao": "30-35 min",
+    "tags": [
+      "chocolate",
+      "brownies",
+      "queijo cottage",
+      "sobremesa",
+      "forno"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-04T12:04:50.223Z"
   }
 ]
