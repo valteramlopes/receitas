@@ -194,7 +194,7 @@ function criarFiltrosCategorias(receitas) {
 
     const container = document.getElementById('filtros-categorias');
     container.innerHTML = categorias
-        .map(c => `<button class="filtro categoria-filtro" onclick="filtrarPor('${c}', this)">${c}</button>`)
+        .map(c => `<button class="filtro categoria-filtro" onclick="filtrarPor('${c}', event.target)">${c}</button>`)
         .join('');
 }
 
