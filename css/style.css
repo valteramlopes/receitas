@@ -202,7 +202,8 @@ body {
     white-space: nowrap;
 }
 
-.filtro.active {
+.filtro.active,
+.categoria-filtro.active {
     background-color: #e8831a;
     color: #121212;
     border-color: #e8831a;
