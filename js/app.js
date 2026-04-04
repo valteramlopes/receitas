@@ -91,8 +91,10 @@ async function carregarReceitas() {
 function mostrarReceitas(receitas) {
     const grid = document.getElementById('receitas-grid');
 
-   // Actualiza os filtros de categorias com base em todas as receitas
-    criarFiltrosCategorias(todasAsReceitas);
+   // Actualiza os filtros de categorias apenas na primeira carga
+    if (document.getElementById('filtros-categorias').children.length === 0) {
+        criarFiltrosCategorias(todasAsReceitas);
+    }
 
     if (receitas.length === 0) {
         grid.innerHTML = `
