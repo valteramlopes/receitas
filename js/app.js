@@ -147,17 +147,17 @@ function criarCartao(receita) {
    FILTRAR RECEITAS POR TEXTO
    ============================================ */
 
-function filtrarPor(filtro) {
+function filtrarPor(filtro, elemento) {
     filtroActivo = filtro;
 
     // Remove active de todos
-    document.querySelectorAll('.filtro').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.filtro, .categoria-filtro').forEach(btn => btn.classList.remove('active'));
 
-    // Adiciona active apenas ao botão "Todos" ou ao clicado
-    if (filtro === 'todos') {
+    // Adiciona active ao elemento clicado
+    if (elemento) {
+        elemento.classList.add('active');
+    } else if (filtro === 'todos') {
         document.querySelector('.filtro').classList.add('active');
-    } else {
-        event.target.classList.add('active');
     }
 
     aplicarFiltros();
@@ -194,7 +194,7 @@ function criarFiltrosCategorias(receitas) {
 
     const container = document.getElementById('filtros-categorias');
     container.innerHTML = categorias
-        .map(c => `<button class="filtro categoria-filtro" onclick="filtrarPor('${c}')">${c}</button>`)
+        .map(c => `<button class="filtro categoria-filtro" onclick="filtrarPor('${c}', this)">${c}</button>`)
         .join('');
 }
 
