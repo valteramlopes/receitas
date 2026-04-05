@@ -118,5 +118,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-05T11:11:36.607Z"
+  },
+  {
+    "id": "54758c36-1a13-4eba-9ca5-919f4ceb5135",
+    "titulo": "Tarte fria de limão",
+    "ingredientes": "3 pacotes de bolacha Maria (600g)\n150g de manteiga derretida\n240 ml (1 chávena) de açúcar\n200 ml de água\n15 ml (1 colher de sopa) de margarina ou manteiga\n2 latas de leite condensado\n200 ml de sumo de limão (cerca de 4 limões)\nRaspa de 1 limão\n1 pacote de natas para bater (200 ml)\n15 ml (1 colher de sopa) de açúcar",
+    "preparacao": "1. Comece por triturar as bolachas. Acrescente a manteiga derretida e misture bem.\n2. Forre uma tarteira de fundo amovível com esta mistura e reserve no frigorífico.\n3. Numa panela, junte o açúcar, a água e a margarina. Leve ao lume brando, mexendo sempre, até o açúcar se dissolver. Deixe arrefecer um pouco.\n4. Numa taça, junte o leite condensado, o sumo de limão e a raspa de limão. Misture bem.\n5. Adicione a mistura de água e açúcar já fria e envolva.\n6. Verta sobre a base de bolacha e leve ao frigorífico por, pelo menos, 4 horas, ou idealmente, de um dia para o outro.\n7. Para a cobertura, bata as natas com o açúcar até ficarem firmes.\n8. Decore a tarte a gosto, pode ser com as natas batidas, ou com raspa de limão. Sirva bem fresca.",
+    "categoria": "Sobremesas",
+    "imagem": "https://caseirices.pt/wp-content/uploads/2025/07/tarte-fria-de-limao-capa-1024x683.jpg",
+    "porcoes": 8,
+    "tempoPreparacao": "20 min",
+    "tempoConfecao": "4 horas",
+    "tags": [
+      "doce",
+      "limão",
+      "rápido",
+      "sem forno",
+      "sobremesa"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-05T11:12:58.229Z"
   }
 ]
