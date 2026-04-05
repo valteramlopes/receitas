@@ -98,5 +98,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-05T11:08:30.861Z"
+  },
+  {
+    "id": "48c65de4-9656-4968-8d41-e847bbad45c4",
+    "titulo": "Frango assado com citrinos e ervas",
+    "ingredientes": "1 frango grande\n3 dentes de alho\n1 c. (chá) de ervas da Provença secas\n½ c. (chá) de pimentão doce\n½ c. (chá) de cominhos moídos\nsumo de ½ limão\n1 limão cortado às rodelas\n1 laranja cortada às rodelas\n2 cebolas roxas pequenas cortadas em 4\n2 batatas grandes cortadas em pedaços pequenos\n400 g de abóbora cortada em pedaços pequenos\n1 raminho de alecrim\nazeite\nsal e pimenta",
+    "preparacao": "1. Pré-aqueça o forno a 180ºC.\n2. Num almofariz ou liquidificador, triture os dentes de alho, as ervas da Provença, o pimentão doce, os cominhos, o sumo de limão, um pouco de azeite, sal e pimenta até obter uma pasta.\n3. Barre o frango com esta pasta, por dentro e por fora, e tempere-o com mais sal e pimenta.\n4. Num tabuleiro de forno grande, coloque o frango, as rodelas de limão e laranja, as cebolas roxas, as batatas, a abóbora e o raminho de alecrim. Regue tudo com um fio de azeite.\n5. Leve ao forno por cerca de 1 hora e 15 minutos, ou até o frango estar dourado e cozido. Vire as batatas e a abóbora a meio da cozedura para que dourem por todos os lados.\n6. Retire do forno e sirva imediatamente.",
+    "categoria": "Prato Principal",
+    "imagem": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjIQ2qsJ30Leqo546dW2evpkJud-ffKdkN7nUmDwSekPfFUyFdTWF_f6rFok0YwmLNluDiqsiI3g2jphLCxixzS1jUuDaJnIjkaSnQ4PmGswR-7kTdoTPxJ0PZmeZhec9G0k9BkPW736aM/s1600/Frango+Assado+em+Borboleta+com+Lim%25C3%25A3o+e+Alho+12.jpg",
+    "porcoes": 4,
+    "tempoPreparacao": "20 min",
+    "tempoConfecao": "1 hora e 15 min",
+    "tags": [
+      "Frango",
+      "Prato Principal",
+      "Assado",
+      "Citrinos",
+      "Ervas"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-05T11:11:36.607Z"
   }
 ]
