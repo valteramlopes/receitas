@@ -158,5 +158,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-12T17:09:01.120Z"
+  },
+  {
+    "id": "24ccbfd3-0cb4-484d-8f65-19fb46e57e88",
+    "titulo": "One pot pasta",
+    "ingredientes": "350g de esparguete (ou outra massa)\n1 cebola roxa, picada\n2 dentes de alho, esmagados\n120g de tomate seco picado (1 chávena)\n1 litro de caldo de legumes (ou água)\n50g de queijo parmesão ralado (1/2 chávena)\n2 colheres de sopa de azeite\nSal e pimenta preta moída na hora a gosto\nManjericão fresco picado para decorar",
+    "preparacao": "1. Numa panela larga, coloque a massa, a cebola roxa picada, os dentes de alho esmagados, o tomate seco picado, o azeite, o sal e a pimenta.\n2. Adicione o caldo de legumes (ou água) e leve ao lume médio-alto até começar a ferver.\n3. Quando levantar fervura, reduza para lume médio e deixe cozinhar durante cerca de 9 minutos, mexendo ocasionalmente, até o líquido ser absorvido pela massa.\n4. Retire do lume, adicione o queijo parmesão ralado e misture bem.\n5. Decore com manjericão fresco picado e sirva imediatamente.",
+    "categoria": "Prato Principal",
+    "imagem": "https://www.casalmisterio.com/wp-content/uploads/2015/09/18779483_BSOao.jpg",
+    "porcoes": 4,
+    "tempoPreparacao": "5 min",
+    "tempoConfecao": "9 min",
+    "tags": [
+      "massa",
+      "uma panela",
+      "fácil",
+      "rápido",
+      "tomate seco"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-12T17:19:29.367Z"
   }
 ]
