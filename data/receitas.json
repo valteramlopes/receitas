@@ -138,5 +138,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-05T11:12:58.229Z"
+  },
+  {
+    "id": "6173bc5a-8dab-4809-bd8a-d8224f321b92",
+    "titulo": "Peitos de frango caprese",
+    "ingredientes": "680 g (1 1/2 libras) de coxas de frango desossadas e sem pele (cerca de 6 coxas médias)\n1 colher de chá de orégãos secos\n1/2 colher de chá de alho em pó\n1/2 colher de chá de sal kosher\n1/4 colher de chá de pimenta preta moída na hora\n1 colher de sopa de azeite\n1 embalagem (cerca de 550 ml) de tomate cereja ou tomate uva\n225 g (8 onças) de mozzarella fresca, seca com papel e desfeita em pedaços de 1,2 cm (1/2 polegada)\n60 ml (1/4 chávena) de manjericão fresco picado\nGlaze balsâmico, para servir (opcional)",
+    "preparacao": "1. Coloque uma grelha no meio do forno e pré-aqueça a 200°C (400°F).\n2. Seque as coxas de frango com papel de cozinha. Tempere-as por todos os lados com orégãos, alho em pó, sal e pimenta. Regue com azeite e esfregue para cobrir. Arrume numa única camada numa assadeira com rebordo.\n3. Leve ao forno por 15 minutos.\n4. Adicione os tomates à assadeira com o frango. Leve ao forno até o frango estar cozinhado e os tomates amolecidos e a começar a rebentar, cerca de mais 10 minutos. Um termómetro de leitura instantânea inserido na parte mais espessa do frango deve registar 74°C (165°F).\n5. Retire a assadeira do forno. Disponha a mozzarella sobre o frango e os tomates. Deixe repousar por 5 minutos, ou até a mozzarella derreter.\n6. Polvilhe com o manjericão fresco. Regue com glaze balsâmico, se estiver a usar. Sirva imediatamente.",
+    "categoria": "Prato Principal",
+    "imagem": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1220,h_915/k%2FPhoto%2FRecipes%2F2024-06-one-pan-caprese-baked-chicken%2Fone-pan-caprese-baked-chicken-147",
+    "porcoes": 4,
+    "tempoPreparacao": "20 min",
+    "tempoConfecao": "25 min",
+    "tags": [
+      "frango",
+      "caprese",
+      "assado",
+      "uma só assadeira",
+      "fácil"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-12T17:09:01.120Z"
   }
 ]
