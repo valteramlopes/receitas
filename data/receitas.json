@@ -178,25 +178,5 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-12T17:19:29.367Z"
-  },
-  {
-    "id": "67d8f8ae-2bbd-493c-bfcd-a07e59d5c30f",
-    "titulo": "Aaa",
-    "ingredientes": "1 copo de iogurte natural\n2 copos de açúcar\n3 copos de farinha sem fermento\n1 copo de óleo vegetal\n4 ovos\n1 colher de sopa de fermento em pó\nraspa de 1 limão",
-    "preparacao": "1. Pré-aqueça o forno a 180 ºC.\n2. Numa taça grande, misture o iogurte, o açúcar, os ovos e o óleo.\n3. Adicione a farinha, o fermento e a raspa de limão, misturando bem até obter uma massa homogénea.\n4. Unte e polvilhe uma forma com farinha e verta a massa.\n5. Leve ao forno pré-aquecido a 180 ºC por cerca de 45 minutos, ou até o bolo estar dourado e cozido.\n6. Faça o teste do palito: se sair limpo, o bolo está pronto.\n7. Deixe arrefecer antes de desenformar e servir.",
-    "categoria": "Sobremesas",
-    "imagem": null,
-    "porcoes": 6,
-    "tempoPreparacao": "15 min",
-    "tempoConfecao": "45 min",
-    "tags": [
-      "bolo",
-      "iogurte",
-      "sobremesa",
-      "fácil",
-      "doce"
-    ],
-    "favorito": false,
-    "dataCriacao": "2026-04-21T08:50:28.816Z"
   }
 ]
