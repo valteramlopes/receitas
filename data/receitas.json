@@ -178,5 +178,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-12T17:19:29.367Z"
+  },
+  {
+    "id": "f517843a-44f0-4214-8418-cc73c374cc06",
+    "titulo": "Mil-folhas de maçã",
+    "ingredientes": "5 maçãs de Alcobaça,2 colheres de sopa de amido de milho (maizena) ou polvilho doce,3 colheres de sopa de açúcar ou adoçante,Fio de agave ou mel,Canela em pó",
+    "preparacao": "1. Começar por fatiar as maçãs bem fininhas e dispor no fundo de uma forma forrada com papel vegetal.,2. Regar com um fio de mel ou agave e fazer camadas de maçã, alternando com a mistura de amido de milho e açúcar.,3. Pressionar bem entre cada camada.,4. Levar ao forno pré-aquecido a 180°C por 1 hora ou na airfryer a 160°C por 40 minutos.,5. Retirar do forno/airfryer e deixar arrefecer completamente (pode refrigerar).,6. Desenformar e servir com canela.",
+    "categoria": "Sobremesas",
+    "imagem": "https://share.google/Kh4Pli9i5taAat2sK",
+    "porcoes": null,
+    "tempoPreparacao": null,
+    "tempoConfecao": "1 hora (forno) ou 40 minutos (airfryer)",
+    "tags": [
+      "maçã",
+      "assado",
+      "sobremesa",
+      "doce",
+      "canela"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-04-26T20:25:55.060Z"
   }
 ]
