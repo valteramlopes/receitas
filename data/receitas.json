@@ -198,19 +198,5 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-26T20:25:55.060Z"
-  },
-  {
-    "id": "28e76453-f0ed-4843-bd97-9bef2ac4c69d",
-    "titulo": "Hg",
-    "ingredientes": "Gg",
-    "preparacao": "Bbb",
-    "categoria": "Pães",
-    "imagem": null,
-    "porcoes": null,
-    "tempoPreparacao": null,
-    "tempoConfecao": null,
-    "tags": null,
-    "favorito": false,
-    "dataCriacao": "2026-05-08T19:57:37.839Z"
   }
 ]
