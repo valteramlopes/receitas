@@ -238,5 +238,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-06-09T13:46:27.567Z"
+  },
+  {
+    "id": "913afdf9-9fe3-49cd-ba6e-254ec7f6019a",
+    "titulo": "Bolognesa na Slow Cooker",
+    "ingredientes": "500 g Carne picada de vaca\n800 g Tomate enlatado (geralmente feito de latas de 400 g)\n3 Talos de Aipo picados finamente\n3 Cenouras descascadas e picadas finamente\n1 Cebola descascada e picada finamente\n6 Dentes de alho descascados e esmagados\n75 g Puré de tomate\n125 ml (0.5 chávenas) Vinho tinto\n2 Cubos de caldo de carne não diluídos esfarelados\n2 colheres de chá Orégãos secos\n3 Folhas de louro\nSal e pimenta preta moída na hora\n\nPARA SERVIR:\n1 colher de sopa Molho Worcestershire (ou Henderson's Relish)\n15 g (3 colheres de chá) Manjericão fresco, picado finamente",
+    "preparacao": "1 Coloque todos os ingredientes de cozedura lenta na panela de cozedura lenta e cozinhe por 6 horas em MÁXIMO ou 8 horas em MÍNIMO.\n2 Adicione o molho Worcestershire e o manjericão fresco.\n\nOPCIONAL:\nSe desejar servir com esparguete, cozinhe o esparguete por 2-3 minutos menos do que o tempo de cozedura habitual. Escorra e adicione ao molho bolonhesa, com uma ou duas salpicos da água de cozedura reservada. Mexa bem e deixe a massa absorver um pouco do molho e amolecer.",
+    "categoria": "Prato Principal",
+    "imagem": "https://www.tamingtwins.com/wp-content/uploads/2022/02/slow-cooker-bolognese-2.jpg",
+    "porcoes": 4,
+    "tempoPreparacao": "15 min",
+    "tempoConfecao": "8 horas",
+    "tags": [
+      "panela de cozedura lenta",
+      "bolonhesa",
+      "sem alourar",
+      "carne de vaca",
+      "italiana"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-06-09T13:59:28.325Z"
   }
 ]
