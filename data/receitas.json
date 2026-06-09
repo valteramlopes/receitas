@@ -198,5 +198,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-04-26T20:25:55.060Z"
+  },
+  {
+    "id": "ed69a95a-b857-4246-a6b5-b98a0fb891b4",
+    "titulo": "Frango e Legumes na Slow Cooker",
+    "ingredientes": "680 g (1.5 lb) de coxas de frango sem pele e sem osso (cerca de 6-8 coxas)\n450 g (1 lb) de batatas novas, cortadas ao meio\n450 g (1 lb) de cenouras baby\n1 cabeça de brócolos, cortada em floretes\n1 cebola grande, cortada em gomos\n240 ml (1 cup) de caldo de galinha\n115 g (1/2 cup) de manteiga, derretida\n30 ml (2 colheres de sopa) de salsa fresca picada\n15 ml (1 colher de sopa) de alecrim fresco picado\n10 ml (2 colheres de chá) de sal\n5 ml (1 colher de chá) de pimenta preta\n5 ml (1 colher de chá) de alho em pó\n4 dentes de alho, picados\n15 ml (1 colher de sopa) de amido de milho (opcional, para engrossar)",
+    "preparacao": "1. Adicione as coxas de frango, as batatas novas, as cenouras baby, os floretes de brócolos e os gomos de cebola à panela de cozedura lenta.\n2. Numa tigela pequena, bata o caldo de galinha, a manteiga derretida, a salsa, o alecrim, o sal, a pimenta, o alho em pó e o alho picado. Despeje sobre o frango e os legumes.\n3. Tape e cozinhe em lume baixo durante 7 horas ou em lume alto durante 3 horas e 30 minutos, até que o frango esteja cozinhado e os legumes tenros.\n4. Se desejar engrossar o molho: Adicione o amido de milho a uma tigela pequena com 30 ml (2 colheres de sopa) de líquido da panela de cozedura lenta e bata bem. Incorpore na panela de cozedura lenta e cozinhe em lume alto por mais 15 minutos, ou até engrossar ao seu gosto.\n5. Sirva quente.",
+    "categoria": "Prato Principal",
+    "imagem": "https://www.savorynothings.com/wp-content/uploads/2026/03/Slow-Cooker-Garlic-Butter-Chicken-and-Vegetables-12.jpg",
+    "porcoes": 6,
+    "tempoPreparacao": "15 minutos",
+    "tempoConfecao": "7 horas (ou 3 horas e 30 minutos em lume alto)",
+    "tags": [
+      "panela de cozedura lenta",
+      "frango",
+      "legumes",
+      "manteiga de alho",
+      "refeição completa"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-06-09T13:18:43.921Z"
   }
 ]
