@@ -218,5 +218,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-06-09T13:18:43.921Z"
+  },
+  {
+    "id": "e0577b8b-04c7-4656-b9c9-95126a309fd7",
+    "titulo": "Sopa de Lentilhas na Slow Cooker",
+    "ingredientes": "2 cebolas, picadas\n3 talos de aipo, picados\n3 cenouras, picadas\n840 g de batatas, picadas\n308 g de milho, congelado\n288 g de lentilhas verdes ou castanhas, lavadas e escorridas\n1 colher de sopa de alho em pó\n2 colheres de chá de orégãos secos\n1 colher de chá de tomilho seco\n3 colheres de sopa de molho de soja (uso Bragg liquid aminos)\n3 folhas de louro\n5 grãos de pimenta inteiros\n2.12 kg de caldo de legumes, baixo teor de sódio\nCebolinho, coentros, salsa, iogurte grego, queijo, tortilha chips, para guarnecer e servir",
+    "preparacao": "1. Numa panela de cozedura lenta grande, adicione a cebola, aipo, cenoura, batatas, milho, lentilhas, alho em pó, orégãos, tomilho, molho de soja, folhas de louro, grãos de pimenta e caldo de legumes. Não é necessário mexer.\n2. Tape e cozinhe em lume brando por 8-10 horas ou em lume alto por 4-5 horas (nesta sopa, mais tempo é melhor).\n3. Descarte as folhas de louro e os grãos de pimenta. Usando uma varinha mágica, pulse algumas vezes até obter a textura desejada – eu gosto cremoso com pedaços.\n4. Guarneça com ervas aromáticas e queijo Parmesão, iogurte natural, tortilha chips e sirva quente.",
+    "categoria": "Sopas",
+    "imagem": "https://ifoodreal.com/wp-content/uploads/2021/10/slow-cooker-lentil-soup-8-1017x1536.jpg",
+    "porcoes": 8,
+    "tempoPreparacao": "10 min",
+    "tempoConfecao": "4 horas",
+    "tags": [
+      "sopa",
+      "lentilhas",
+      "cozedura lenta",
+      "vegan",
+      "fácil"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-06-09T13:46:27.567Z"
   }
 ]
