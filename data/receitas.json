@@ -258,5 +258,25 @@
     ],
     "favorito": false,
     "dataCriacao": "2026-06-09T13:59:28.325Z"
+  },
+  {
+    "id": "c19aedf4-a661-4cd6-984f-366b7225332b",
+    "titulo": "Flatbread",
+    "ingredientes": "150 g de farinha de trigo\n125 g de iogurte natural sem açúcar\n1 pitada de sal (opcional)",
+    "preparacao": "1. Mistura a farinha com o iogurte e o sal até obteres uma massa homogénea.\n2. Amassa durante 2–3 minutos. Se estiver muito pegajosa, acrescenta um pouco de farinha.\n3. Deixa repousar 10 minutos, tapada.\n4. Divide em 4 bolas e estende cada uma com um rolo.\n5. Aquece uma frigideira antiaderente em lume médio-alto, sem óleo.\n6. Cozinha cada pão durante cerca de 1–2 minutos de cada lado, até aparecerem manchas douradas e algumas bolhas.\n\nO truque: assim que saírem da frigideira, empilha os pães e cobre-os com um pano limpo para não secarem.\nPodes pincelar com azeite ou manteiga e alho para ficarem ainda mais saborosos.\nNota: usa iogurte grego se quiseres uma massa",
+    "categoria": "Pães",
+    "imagem": "https://i0.wp.com/theeuropeandish.com/wp-content/uploads/2024/04/image_123650291-17.jpg?resize=1536%2C1152&ssl=1",
+    "porcoes": 4,
+    "tempoPreparacao": "15 min",
+    "tempoConfecao": "8-16 min",
+    "tags": [
+      "pão",
+      "iogurte",
+      "rápido",
+      "frigideira",
+      "fácil"
+    ],
+    "favorito": false,
+    "dataCriacao": "2026-10-12T18:14:18.528Z"
   }
 ]
